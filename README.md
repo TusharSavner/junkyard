@@ -1,2 +1,7 @@
 # python_programs
-A collection of Python scripts—some practical, some just for fun. Created this repo on a good vibes kind of day, and it shows. Expect bits of logic, bursts of creativity, and a sprinkle of trial &amp; error :]
+
+I’m creating this repository almost a month after I started learning to code. Right now, I’m diving into that popular language—Python 🐍
+
+Here, I’ll be uploading all the code snippets and scripts that I personally feel are worth keeping. They might not be flashy or complex, but they mean a lot to me and reflect my learning journey.
+
+Feel free to use any code, file, or script from this repository. It’ll honestly make me really happy if anything I wrote turns out to be useful in any way. :]
