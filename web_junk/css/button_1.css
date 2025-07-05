@@ -1,0 +1,52 @@
+#sub_button {
+  height: 32px;
+  width: 96px;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  background-color: red;
+  border-radius: 2px;
+  color: white;
+  transition: transform 0.2s;
+  border: none;
+  display: block;
+  }
+#sub_button:hover {
+
+  transform: scale(0.95);
+  cursor: pointer;
+  background-color: rgb(220,0,0) ;
+}
+#sub_button:active {
+  transform: scale(0.80);
+  background-color: rgb(180,0,0) ;
+  
+}
+#join_button {
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  height: 32px;
+  width: 58px;
+  color: blue;
+  background-color: white;
+  border-width: 1px;
+  border-color: blue;
+  transition: color 0.2s,
+  background-color 0.2s,
+  box-shadow 0.2s,
+  transform 0.2s;;
+
+}
+#join_button:hover {
+  cursor: pointer;
+  color: white;
+  background-color: blue;
+  box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.3);
+}
+#join_button:active {
+  transform: scale(0.8);
+  background-color: rgb(0,0,180);
+}
