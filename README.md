@@ -1,7 +1,4 @@
-# python_programs
+#junkyard
 
-I’m creating this repository almost a month after I started learning to code. Right now, I’m diving into that popular language—Python 🐍
-
-Here, I’ll be uploading all the code snippets and scripts that I personally feel are worth keeping. They might not be flashy or complex, but they mean a lot to me and reflect my learning journey.
-
-Feel free to use any code, file, or script from this repository. It’ll honestly make me really happy if anything I wrote turns out to be useful in any way. :]
+This repository is my digital junk drawer—a place where I stash every script, snippet, config, and idea that pops into existence. It’s not meant to be elegant, organized, or even mildly coherent. If you stumbled in here looking for polished code, friendly advice: back away slowly and pretend you never saw this.
+That said, if you do find something useful... huh, cool. Pure accident, I promise.
