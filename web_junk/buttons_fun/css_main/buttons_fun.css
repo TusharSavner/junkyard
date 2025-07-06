@@ -18,8 +18,11 @@ body {
   color: white;
   transition: transform 0.2s;
   border: none;
-  
-  }
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
 #sub_button:hover {
 
   transform: scale(0.95);
@@ -43,7 +46,11 @@ body {
   transition: color 0.2s,
   background-color 0.2s,
   box-shadow 0.2s,
-  transform 0.2s;;
+  transform 0.2s;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
 
 }
 #join_button:hover {
