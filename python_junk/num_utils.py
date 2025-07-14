@@ -1,5 +1,6 @@
 import math
-def is_prime(i):    #checks if the number is prime or not, returns True/False as answer
+#checks if the number is prime or not, returns True/False as answer
+def is_prime(i):    
     if i == 2:
         return True
     x = 2 
@@ -13,14 +14,15 @@ def is_prime(i):    #checks if the number is prime or not, returns True/False as
     else:
         return False
 
- 
-def is_even(i):    #checks if the number is even or not, returns True/False as answer
+ #checks if the number is even or not, returns True/False as answer
+def is_even(i):    
     if i % 2 == 0:
         return True
     else :
         return False
 
-def is_odd(i):    #checks if the number is odd or not, returns True/False as answer
+#checks if the number is odd or not, returns True/False as answer
+def is_odd(i):    
     if i % 2 == 1:
         return True
     else :
