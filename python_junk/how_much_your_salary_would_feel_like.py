@@ -1,9 +1,14 @@
+#ask about your native income, native country and the target country
+#also keep in mind this program doesn't has real-time data
 print("Input Country's Name as Three-Characters Codes")
 country_ini = input("What Country Do You Earn In ?").upper()
 salary = int(input("What's Your Income In Native Currency "))
 country_end = input("What Country You Wanna Compare With ? ").upper()
+
+# list of currencies that keeps its symbol at left side of the number, (e.g 120000€)
 suffix_symbol_currency = ["€","zł", "Ft", "Kč","kr", "₫","₭","₮"]
 
+#dictionary containing ppp of dollar in each 172 countries
 ppp = {
     "AFG": 14.8131656640,
     "ALB": 45.8107643120,
@@ -177,6 +182,8 @@ ppp = {
     "ZWE": 356.5800170900
 }
 
+
+#dictionary containing symbols of currencies in each 172 countries
 currency = {
   "AFG": "؋",
   "ALB": "L",
@@ -350,6 +357,9 @@ currency = {
   "ZWE": "Z$"
 }
 
+
+
+#dictionary containing price of currencies in dollar for 172 countries
 currency_value = {
   "AFG": 0.011234,
   "ALB": 0.010345,
@@ -523,6 +533,7 @@ currency_value = {
   "ZWE": 0.003456
 }
 
+#the core function tht does calculations
 def convert(country_ini, country_end, salary):
     salary_end = salary * (ppp[country_end]/ppp[country_ini])
     local_value = salary_end * (currency_value[country_end]/currency_value[country_ini])
@@ -541,5 +552,5 @@ def convert(country_ini, country_end, salary):
     
    
     return string
-
+#sample output
 print(convert(country_ini,country_end,salary))
