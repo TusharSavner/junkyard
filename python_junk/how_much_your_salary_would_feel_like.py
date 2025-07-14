@@ -1,6 +1,7 @@
-salary = int(input(''))
-country_ini = input('').upper()
-country_end = input('').upper()
+print("Input Country's Name as Three-Characters Codes")
+country_ini = input("What Country Do You Earn In ?").upper()
+salary = int(input("What's Your Income In Native Currency "))
+country_end = input("What Country You Wanna Compare With ? ").upper()
 suffix_symbol_currency = ["€","zł", "Ft", "Kč","kr", "₫","₭","₮"]
 
 ppp = {
