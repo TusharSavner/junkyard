@@ -167,7 +167,7 @@ function fn(num) {
     minimumFractionDigits: 2,
     maximumFractionDigits: 2
   });
-};
+}
 
 
 function calculate() {
@@ -180,7 +180,7 @@ function calculate() {
     display.textContent = "Please enter all three values before calculating.";
     display.style.color = "red";
     return;
-  };
+  }
   else {
 
    
@@ -197,8 +197,8 @@ function calculate() {
     else {
         var display_ini = `${currency[country_ini]}${fn(salary_ini)}`;
         var abs_value = `${currency[country_ini]}${fn(abs_salary)}`;
-    };
-  };
+    }
+  }
     
     display.textContent =`Income of ${display_ini} in ${full_name[country_ini]} would feel like ${display_end} in ${full_name[country_end]} and is equivalent to ${abs_value} in absolute value.`
     display.style.color = 'black';
