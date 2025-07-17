@@ -173,25 +173,25 @@ function calculate() {
     display.textContent = "Please enter all three values before calculating.";
     display.style.color = "red";
     return;
-  };
+  }
   else {
 
    
     if (suffix_currency.includes(currency[country_end])){
         var display_end = `${salary_end.toFixed(2)}${currency[country_end]}`;
-    };
+    }
     else {
         var display_end = `${currency[country_end]}${salary_end.toFixed(2)}`;
     };
     if (suffix_currency.includes(currency[country_ini])) {
         var display_ini = `${salary_ini.toFixed(2)}${currency[country_ini]}`;
         var abs_value = `${abs_salary.toFixed(2)}${currency[country_ini]}`;
-    };
+    }
     else {
         var display_ini = `${currency[country_ini]}${salary_ini.toFixed(2)}`;
         var abs_value = `${currency[country_ini]}${abs_salary.toFixed(2)}`;
-    };
-  };
+    }
+  }
     
     display.textContent =`Income of ${display_ini} in ${full_name[country_ini]} would feel like ${display_end} in ${full_name[country_end]} and is equivalent to ${abs_value} in absolute value.`
     display.style.color = 'black';
