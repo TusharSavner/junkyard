@@ -169,6 +169,13 @@ function calculate() {
     salary_ini = parseFloat(document.getElementById("salary_ini").value);
     salary_end = salary_ini * (ppp[country_end] / ppp[country_ini]);
     abs_salary = salary_end * (price[country_end] / price[country_ini] )
+  if (!salary_ini || !country_ini || !country_end) {
+    display.textContent = "Please enter all three values before calculating.";
+    display.style.color = "red";
+    return;
+  }
+  else {
+
    
     if (suffix_currency.includes(currency[country_end])){
         var display_end = `${salary_end.toFixed(2)}${currency[country_end]}`;
@@ -184,9 +191,10 @@ function calculate() {
         var display_ini = `${currency[country_ini]}${salary_ini.toFixed(2)}`;
         var abs_value = `${currency[country_ini]}${abs_salary.toFixed(2)}`;
     }
-
-    display.textContent =`Income of ${display_ini} in ${full_name[country_ini]} would feel like ${display_end} in ${full_name[country_end]} and is equivalent to ${abs_value} in absolute value.`
+  }
     
+    display.textContent =`Income of ${display_ini} in ${full_name[country_ini]} would feel like ${display_end} in ${full_name[country_end]} and is equivalent to ${abs_value} in absolute value.`
+    display.style.color = 'black';
 };
 
 
