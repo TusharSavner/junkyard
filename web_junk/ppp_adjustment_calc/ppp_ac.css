@@ -1,0 +1,118 @@
+/* Reset basic spacing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body setup */
+body {
+  height: 100vh;
+  width: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #f5f7fa, #c3cfe2);
+}
+
+/* Main container */
+#ui {
+  background-color: white;
+  padding: 30px 40px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  max-width: 480px;
+  width: 90%;
+  text-align: center;
+}
+
+/* Title styling */
+#title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 25px;
+}
+
+/* Input sections layout */
+#inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Each label + input pair */
+#country_ini,
+#income_input,
+#country_end {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  font-size: 16px;
+  gap: 6px;
+}
+
+/* Input fields */
+input[type="number"],
+select {
+  padding: 10px 12px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+}
+
+/* Select2 dropdown overrides */
+.select2-container .select2-selection--single {
+  height: 42px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  padding: 6px 12px;
+  font-size: 15px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+  line-height: 30px;
+}
+
+/* Button */
+button {
+  margin-top: 10px;
+  padding: 12px 20px;
+  font-size: 16px;
+  background-color: #4A90E2;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background-color: #357ABD;
+}
+
+/* Result */
+#display {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #222;
+  font-weight: 500;
+}
+
+/* Fix for Select2 vertical text alignment */
+.select2-container .select2-selection--single {
+  height: 42px !important;
+  display: flex !important;
+  align-items: center !important;
+  padding-left: 12px !important;
+  font-size: 15px;
+  border-radius: 8px;
+}
+
+.select2-selection__rendered {
+  line-height: normal !important;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
