@@ -162,6 +162,13 @@ const suffix_currency = ["zł", "Ft", "Kč", "kr", "₫", "₭", "₮", "ден"
 
 var display = document.getElementById("display");
 
+function fn(num) {
+  return num.toLocaleString("en-US", {
+    minimumFractionDigits: 2,
+    maximumFractionDigits: 2
+  });
+}
+
 
 function calculate() {
     country_ini = document.getElementById("country_select").value;
@@ -178,18 +185,18 @@ function calculate() {
 
    
     if (suffix_currency.includes(currency[country_end])){
-        var display_end = `${salary_end.toFixed(2)}${currency[country_end]}`;
+        var display_end = `${fn(salary_end)}${currency[country_end]}`;
     }
     else {
-        var display_end = `${currency[country_end]}${salary_end.toFixed(2)}`;
+        var display_end = `${currency[country_end]}${fn(salary_end)}`;
     };
     if (suffix_currency.includes(currency[country_ini])) {
-        var display_ini = `${salary_ini.toFixed(2)}${currency[country_ini]}`;
-        var abs_value = `${abs_salary.toFixed(2)}${currency[country_ini]}`;
+        var display_ini = `${fn(salary_ini)}${currency[country_ini]}`;
+        var abs_value = `${fn(abs_salary)}${currency[country_ini]}`;
     }
     else {
-        var display_ini = `${currency[country_ini]}${salary_ini.toFixed(2)}`;
-        var abs_value = `${currency[country_ini]}${abs_salary.toFixed(2)}`;
+        var display_ini = `${currency[country_ini]}${fn(salary_ini)}`;
+        var abs_value = `${currency[country_ini]}${fn(abs_salary)}`;
     }
   }
     
