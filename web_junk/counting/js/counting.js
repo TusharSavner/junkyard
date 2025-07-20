@@ -1,7 +1,7 @@
 var number = 0
 
 function dec() {
-    number = number + 1;
+    number = number - 1;
     document.getElementById("display").textContent = number
 };
 function res() {
