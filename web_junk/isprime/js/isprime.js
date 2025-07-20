@@ -1,7 +1,7 @@
 function isprime() {
     let num = Number(document.getElementById("input").value);
     if (num === 1) {
-        document.getElementById("result").textContent = `1 can't be prime number`;
+        document.getElementById("result").textContent = `1 can't be a prime number`;
         return false;
     }
         if (num === 2) {
