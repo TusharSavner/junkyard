@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+
+body, html {
+    height: 100%;
+    background: #f3f4f6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#container {
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    padding: 40px 60px;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+}
+
+
+#title h1 {
+    font-size: 2rem;
+    margin-bottom: 24px;
+    color: #333;
+}
+
+
+#input {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+#input input[type="number"] {
+    width: 100%;
+    padding: 10px 12px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.2s ease;
+}
+
+#input input[type="number"]:focus {
+    border-color: #4f46e5;
+}
+
+
+#input_format select,
+#output_format select {
+    width: 100%;
+    padding: 10px 12px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    background-color: #fff;
+    transition: border-color 0.2s ease;
+}
+
+#input_format select:focus,
+#output_format select:focus {
+    border-color: #4f46e5;
+}
+
+
+#button button {
+    padding: 12px 24px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #4f46e5;
+    color: white;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    margin-top: 8px;
+}
+
+#button button:hover {
+    background-color: #3730a3;
+}
+
+#output {
+    margin-top: 20px;
+}
+
+#output_text {
+    font-size: 1.2rem;
+    color: #111827;
+    font-weight: 600;
+}
