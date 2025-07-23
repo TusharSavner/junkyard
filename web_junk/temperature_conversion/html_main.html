@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css_main.css">
+    </head>
+    <body>
+        <div id="container">
+            <div id="title">
+                <h1 id="title_text">
+                    Temperature Convertor
+                </h1>
+            </div>
+            <div id="input">
+                <input id="numeric_input" type="number" placeholder="Temperature">
+
+                <div id="input_format">
+                    <select id="inputUnit">
+                        <option value="C">Celsius (°C)</option>
+                        <option value="F">Fahrenheit (°F)</option>
+                        <option value="K">Kelvin (K)</option>
+                        <option value="R">Rankine (°R)</option>
+                        <option value="Re">Réaumur (°Ré)</option>
+                        <option value="D">Delisle (°D)</option>
+                        <option value="N">Newton (°N)</option>
+                        <option value="Ro">Rømer (°Rø)</option>
+                    </select>
+                </div>
+                <div id="output_format">
+                    <select id="outputUnit">
+                        <option value="C">Celsius (°C)</option>
+                        <option value="F">Fahrenheit (°F)</option>
+                        <option value="K">Kelvin (K)</option>
+                        <option value="R">Rankine (°R)</option>
+                        <option value="Re">Réaumur (°Ré)</option>
+                        <option value="D">Delisle (°D)</option>
+                        <option value="N">Newton (°N)</option>
+                        <option value="Ro">Rømer (°Rø)</option>
+                    </select>
+                </div>
+            </div>
+            <div id="button">
+                <button id="button" onClick="convert()">Convert</button>
+            </div>
+            <div id="output">
+                <p id="output_text"></p>
+            </div>
+        </div>
+        <script src="js_main.js">
+
+        </script>
+    </body>
+</html>
